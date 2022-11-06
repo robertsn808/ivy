@@ -4,6 +4,7 @@ import ivy
 import numpy as np
 from etils.edc.dataclass_utils_test import A
 import ivy
+from self import self
 
 
 class ufunc:
@@ -17,7 +18,7 @@ class ufunc:
             r[i] = t
 
         if ivy.exists(out):
-            return ivy_test.__call__(self, dtype=dtype, out=out)
+            return ivy.any(self, dtype=dtype, out=out)
 
         return r
 
