@@ -12,5 +12,5 @@ class ufunc:
             t = op(t, A[i])
             r[i] = t
         if ivy.exists(out):
-            return ivy.any(self.A, dtype=dtype, out=out)
+            return ivy.any(dtype=dtype, out=out)
         return r
