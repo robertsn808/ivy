@@ -5,12 +5,12 @@ from etils.edc.dataclass_utils_test import A
 
 
 class ufunc:
-    def __accumulate__(array, axis, dtype, out):
+    def __accumulate__(array, dtype):
         r = ivy.array(np.empty(len(A)))
         t = op.identity
         for i in range(len(A)):
             t = op(t, A[i])
             r[i] = t
         if ivy.exists(out):
-            return ivy.any(dtype=dtype, out=out)
+            return ivy.any(dtype=dtype)
         return r
