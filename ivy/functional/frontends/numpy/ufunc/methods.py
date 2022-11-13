@@ -11,5 +11,5 @@ class ufunc:
             t = op(t, A[i])
             r[i] = t
         if ivy.exists(out):
-            return ivy_test.__call__(dtype=dtype, out=out)
+            return __call__(dtype=dtype, out=out)
         return r
