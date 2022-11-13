@@ -3,6 +3,8 @@ import ivy
 import numpy as np
 from etils.edc.dataclass_utils_test import A
 
+
+
 class ufunc:
     def __accumulate__(array, axis, dtype, out):
         r = ivy.array(np.empty(len(A)))
