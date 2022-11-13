@@ -5,8 +5,9 @@ from etils.edc.dataclass_utils_test import A
 
 
 class ufunc:
-    def __accumulate__(array, dtype):
+    def __accumulate__(array, dtype, operation):
         r = ivy.array(np.empty(len(A)))
+        op = operation
         t = op.identity
         for i in range(len(A)):
             t = op(t, A[i])
