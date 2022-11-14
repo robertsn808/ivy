@@ -36,7 +36,7 @@ def arctan2(x1, x2):
 
 
 @to_ivy_arrays_and_back
-def argmax(a, axis=None, out=None, keepdims=None):
+def argmax(a, axis=None, out=None, keepdims=False):
     return ivy.argmax(a, axis=axis, keepdims=keepdims, out=out)
 
 
@@ -188,6 +188,7 @@ def tanh(x):
     return ivy.tanh(x)
 
 
+@to_ivy_arrays_and_back
 def uint16(x):
     return ivy.astype(x, ivy.uint16)
 
@@ -398,6 +399,34 @@ def kron(a, b):
 
 
 @to_ivy_arrays_and_back
+def sum(
+        a, axis=None, dtype=None, out=None, keepdims=False, initial=None, where=None, promote_integers=True
+):
+    if initial:
+        s = ivy.shape(a, as_array=True)
+        s[axis] = 1
+        header = ivy.full(ivy.Shape(tuple(s)), initial)
+        a = ivy.concat([a, header], axis=axis)
+
+    result_dtype = dtype or ivy.dtype(a)
+
+    if dtype is None and promote_integers:
+        if ivy.is_bool_dtype(result_dtype):
+            result_dtype = ivy.default_int_dtype()
+        elif ivy.is_uint_dtype(result_dtype):
+            if ivy.dtype_bits(result_dtype) < ivy.dtype_bits(ivy.default_uint_dtype()):
+                result_dtype = ivy.default_uint_dtype()
+        elif ivy.is_int_dtype(result_dtype):
+            if ivy.dtype_bits(result_dtype) < ivy.dtype_bits(ivy.default_int_dtype()):
+                result_dtype = ivy.default_int_dtype()
+
+    if ivy.is_array(where):
+        a = ivy.where(where, a, ivy.default(out, ivy.zeros_like(a)))
+
+    return ivy.sum(a, axis=axis, dtype=result_dtype, keepdims=keepdims, out=out)
+
+
+@to_ivy_arrays_and_back
 def lcm(x1, x2):
     return ivy.lcm(x1, x2)
 
@@ -410,3 +439,56 @@ def logaddexp2(x1, x2):
 @to_ivy_arrays_and_back
 def trapz(y, x=None, dx=1.0, axis=-1, out=None):
     return ivy.trapz(y, x=x, dx=dx, axis=axis, out=out)
+
+
+@to_ivy_arrays_and_back
+def any(a, axis=None, keepdims=False, *, where=True):
+    ret = ivy.any(a, axis=axis, keepdims=keepdims)
+    if ivy.is_array(where):
+        ret = ivy.where(where, ret, ivy.default(ivy.zeros_like(ret)))
+    return ret
+
+
+@to_ivy_arrays_and_back
+def diag(v, k=0):
+    return ivy.diag(v, k=k)
+
+
+@to_ivy_arrays_and_back
+def flip(m, axis=None):
+    return ivy.flip(m, axis=axis)
+
+
+@to_ivy_arrays_and_back
+def fliplr(m):
+    return ivy.fliplr(m)
+
+
+@to_ivy_arrays_and_back
+def hstack(x, dtype=None):
+    return ivy.hstack(x)
+
+
+@to_ivy_arrays_and_back
+def arctanh(x):
+    return ivy.atanh(x)
+
+
+@to_ivy_arrays_and_back
+def maximum(x1, x2):
+    return ivy.maximum(x1, x2)
+
+
+@to_ivy_arrays_and_back
+def minimum(x1, x2):
+    return ivy.minimum(x1, x2)
+
+
+@to_ivy_arrays_and_back
+def msort(a):
+    return ivy.msort(a)
+
+
+@to_ivy_arrays_and_back
+def multiply(x1, x2):
+    return ivy.multiply(x1, x2)
