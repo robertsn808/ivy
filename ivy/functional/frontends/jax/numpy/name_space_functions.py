@@ -400,7 +400,14 @@ def kron(a, b):
 
 @to_ivy_arrays_and_back
 def sum(
-        a, axis=None, dtype=None, out=None, keepdims=False, initial=None, where=None, promote_integers=True
+    a,
+    axis=None,
+    dtype=None,
+    out=None,
+    keepdims=False,
+    initial=None,
+    where=None,
+    promote_integers=True,
 ):
     if initial:
         s = ivy.shape(a, as_array=True)
@@ -492,3 +499,39 @@ def msort(a):
 @to_ivy_arrays_and_back
 def multiply(x1, x2):
     return ivy.multiply(x1, x2)
+
+
+alltrue = all
+
+
+sometrue = any
+
+
+@to_ivy_arrays_and_back
+def not_equal(x1, x2):
+    return ivy.not_equal(x1, x2)
+
+
+@to_ivy_arrays_and_back
+def less(x1, x2):
+    return ivy.less(x1, x2)
+
+
+@to_ivy_arrays_and_back
+def less_equal(x1, x2):
+    return ivy.less_equal(x1, x2)
+
+
+@to_ivy_arrays_and_back
+def greater(x1, x2):
+    return ivy.greater(x1, x2)
+
+
+@to_ivy_arrays_and_back
+def greater_equal(x1, x2):
+    return ivy.greater_equal(x1, x2)
+
+
+@to_ivy_arrays_and_back
+def equal(x1, x2):
+    return ivy.equal(x1, x2)
