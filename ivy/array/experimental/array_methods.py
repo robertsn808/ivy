@@ -1,4 +1,4 @@
-#ivy.array.experimental.elementwise
+# ivy.array.experimental.elementwise
 # global
 import abc
 from typing import Optional, Union, Tuple
@@ -40,7 +40,7 @@ def sinc(self: ivy.Array, *, out: Optional[ivy.Array] = None) -> ivy.Array:
 
 
 def lcm(
-    self: ivy.Array, x2: ivy.Array, *, out: Optional[ivy.Array] = None
+        self: ivy.Array, x2: ivy.Array, *, out: Optional[ivy.Array] = None
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.lcm. This method simply wraps the
@@ -73,11 +73,11 @@ def lcm(
 
 
 def fmod(
-    self: ivy.Array,
-    x2: ivy.Array,
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        x2: ivy.Array,
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.fmod. This method simply
     wraps the function, and so the docstring for ivy.fmod also applies to
@@ -114,11 +114,11 @@ def fmod(
 
 
 def fmax(
-    self: ivy.Array,
-    x2: ivy.Array,
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        x2: ivy.Array,
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.fmax. This method simply
     wraps the function, and so the docstring for ivy.fmax also applies to
@@ -155,13 +155,13 @@ def fmax(
 
 
 def trapz(
-    self: ivy.Array,
-    /,
-    *,
-    x: Optional[ivy.Array] = None,
-    dx: Optional[float] = 1.0,
-    axis: Optional[int] = -1,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        *,
+        x: Optional[ivy.Array] = None,
+        dx: Optional[float] = 1.0,
+        axis: Optional[int] = -1,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.trapz. This method simply
     wraps the function, and so the docstring for ivy.trapz also applies to
@@ -207,11 +207,11 @@ def trapz(
 
 
 def float_power(
-    self: Union[ivy.Array, float, list, tuple],
-    x2: Union[ivy.Array, float, list, tuple],
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: Union[ivy.Array, float, list, tuple],
+        x2: Union[ivy.Array, float, list, tuple],
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.float_power. This method simply
     wraps the function, and so the docstring for ivy.float_power also applies to
@@ -248,10 +248,10 @@ def float_power(
 
 
 def exp2(
-    self: Union[ivy.Array, float, list, tuple],
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: Union[ivy.Array, float, list, tuple],
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.exp2. This method simply
     wraps the function, and so the docstring for ivy.exp2 also applies to
@@ -282,13 +282,13 @@ def exp2(
 
 
 def count_nonzero(
-    self: ivy.Array,
-    /,
-    *,
-    axis: Optional[Union[int, Tuple[int, ...]]] = None,
-    keepdims: Optional[bool] = False,
-    dtype: Optional[Union[ivy.Dtype, ivy.NativeDtype]] = None,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        *,
+        axis: Optional[Union[int, Tuple[int, ...]]] = None,
+        keepdims: Optional[bool] = False,
+        dtype: Optional[Union[ivy.Dtype, ivy.NativeDtype]] = None,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.count_nonzero. This method simply
     wraps the function, and so the docstring for ivy.count_nonzero also applies to
@@ -334,13 +334,13 @@ def count_nonzero(
 
 
 def nansum(
-    self: ivy.Array,
-    /,
-    *,
-    axis: Optional[Union[tuple, int]] = None,
-    dtype: Optional[Union[ivy.Dtype, ivy.NativeDtype]] = None,
-    keepdims: Optional[bool] = False,
-    out: Optional[ivy.Container] = None,
+        self: ivy.Array,
+        /,
+        *,
+        axis: Optional[Union[tuple, int]] = None,
+        dtype: Optional[Union[ivy.Dtype, ivy.NativeDtype]] = None,
+        keepdims: Optional[bool] = False,
+        out: Optional[ivy.Container] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.nansum. This method simply
@@ -384,11 +384,11 @@ def nansum(
 
 
 def gcd(
-    self: Union[ivy.Array, int, list, tuple],
-    x2: Union[ivy.Array, int, list, tuple],
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: Union[ivy.Array, int, list, tuple],
+        x2: Union[ivy.Array, int, list, tuple],
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.gcd. This method simply
     wraps the function, and so the docstring for ivy.gcd also applies to
@@ -422,14 +422,14 @@ def gcd(
 
 
 def isclose(
-    self: ivy.Array,
-    b: ivy.Array,
-    /,
-    *,
-    rtol: Optional[float] = 1e-05,
-    atol: Optional[float] = 1e-08,
-    equal_nan: Optional[bool] = False,
-    out: Optional[ivy.Container] = None,
+        self: ivy.Array,
+        b: ivy.Array,
+        /,
+        *,
+        rtol: Optional[float] = 1e-05,
+        atol: Optional[float] = 1e-08,
+        equal_nan: Optional[bool] = False,
+        out: Optional[ivy.Container] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.isclose. This method simply
@@ -480,10 +480,10 @@ def isclose(
 
 
 def isposinf(
-    self: Union[ivy.Array, float, list, tuple],
-    /,
-    *,
-    out: Optional[ivy.Container] = None,
+        self: Union[ivy.Array, float, list, tuple],
+        /,
+        *,
+        out: Optional[ivy.Container] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.isposinf. This method simply
@@ -516,10 +516,10 @@ def isposinf(
 
 
 def isneginf(
-    self: Union[ivy.Array, float, list, tuple],
-    /,
-    *,
-    out: Optional[ivy.Container] = None,
+        self: Union[ivy.Array, float, list, tuple],
+        /,
+        *,
+        out: Optional[ivy.Container] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.isneginf. This method simply
@@ -552,14 +552,14 @@ def isneginf(
 
 
 def nan_to_num(
-    self: ivy.Array,
-    /,
-    *,
-    copy: Optional[bool] = True,
-    nan: Optional[Union[float, int]] = 0.0,
-    posinf: Optional[Union[float, int]] = None,
-    neginf: Optional[Union[float, int]] = None,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        *,
+        copy: Optional[bool] = True,
+        nan: Optional[Union[float, int]] = 0.0,
+        posinf: Optional[Union[float, int]] = None,
+        neginf: Optional[Union[float, int]] = None,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.nan_to_num. This method simply
     wraps the function, and so the docstring for ivy.nan_to_num also applies to
@@ -605,11 +605,11 @@ def nan_to_num(
 
 
 def logaddexp2(
-    self: Union[ivy.Array, float, list, tuple],
-    x2: Union[ivy.Array, float, list, tuple],
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: Union[ivy.Array, float, list, tuple],
+        x2: Union[ivy.Array, float, list, tuple],
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.logaddexp2. This method
     simply wraps the function, and so the docstring for ivy.logaddexp2 also
@@ -640,11 +640,11 @@ def logaddexp2(
 
 
 def signbit(
-    self: Union[ivy.Array, float, int, list, tuple],
-    x2: Union[ivy.Array, float, int, list, tuple],
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: Union[ivy.Array, float, int, list, tuple],
+        x2: Union[ivy.Array, float, int, list, tuple],
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.signbit. This method
     simply wraps the function, and so the docstring for ivy.signbit also
@@ -672,14 +672,14 @@ def signbit(
 
 
 def allclose(
-    self: ivy.Array,
-    x2: ivy.Array,
-    /,
-    *,
-    rtol: Optional[float] = 1e-05,
-    atol: Optional[float] = 1e-08,
-    equal_nan: Optional[bool] = False,
-    out: Optional[ivy.Container] = None,
+        self: ivy.Array,
+        x2: ivy.Array,
+        /,
+        *,
+        rtol: Optional[float] = 1e-05,
+        atol: Optional[float] = 1e-08,
+        equal_nan: Optional[bool] = False,
+        out: Optional[ivy.Container] = None,
 ) -> bool:
     """
     ivy.Array instance method variant of ivy.allclose. This method simply
@@ -733,11 +733,12 @@ def allclose(
         self._data, x2, rtol=rtol, atol=atol, equal_nan=equal_nan, out=out
     )
 
+
 def fix(
-    self: ivy.Array,
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.fix. This method
     simply wraps the function, and so the docstring for ivy.fix also
@@ -766,11 +767,11 @@ def fix(
 
 
 def nextafter(
-    self: ivy.Array,
-    x2: ivy.Array,
-    /,
-    *,
-    out: Optional[ivy.Container] = None,
+        self: ivy.Array,
+        x2: ivy.Array,
+        /,
+        *,
+        out: Optional[ivy.Container] = None,
 ) -> bool:
     """
     ivy.Array instance method variant of ivy.nextafter. This method simply
@@ -801,7 +802,8 @@ def nextafter(
     """
     return ivy.nextafter(self._data, x2, out=out)
 
-#ivy.array.experimental.layers
+
+# ivy.array.experimental.layers
 # global
 import abc
 from typing import Optional, Union, Tuple, Literal
@@ -811,14 +813,14 @@ import ivy
 
 
 def max_pool1d(
-    self: ivy.Array,
-    kernel: Union[int, Tuple[int]],
-    strides: Union[int, Tuple[int]],
-    padding: str,
-    /,
-    *,
-    data_format: str = "NHWC",
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        kernel: Union[int, Tuple[int]],
+        strides: Union[int, Tuple[int]],
+        padding: str,
+        /,
+        *,
+        data_format: str = "NHWC",
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of `ivy.max_pool1d`. This method simply
@@ -866,14 +868,14 @@ def max_pool1d(
 
 
 def max_pool2d(
-    self: ivy.Array,
-    kernel: Union[int, Tuple[int], Tuple[int, int]],
-    strides: Union[int, Tuple[int], Tuple[int, int]],
-    padding: str,
-    /,
-    *,
-    data_format: str = "NHWC",
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        kernel: Union[int, Tuple[int], Tuple[int, int]],
+        strides: Union[int, Tuple[int], Tuple[int, int]],
+        padding: str,
+        /,
+        *,
+        data_format: str = "NHWC",
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of `ivy.max_pool2d`. This method simply
@@ -924,14 +926,14 @@ def max_pool2d(
 
 
 def max_pool3d(
-    self: ivy.Array,
-    kernel: Union[int, Tuple[int], Tuple[int, int, int]],
-    strides: Union[int, Tuple[int], Tuple[int, int, int]],
-    padding: str,
-    /,
-    *,
-    data_format: str = "NDHWC",
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        kernel: Union[int, Tuple[int], Tuple[int, int, int]],
+        strides: Union[int, Tuple[int], Tuple[int, int, int]],
+        padding: str,
+        /,
+        *,
+        data_format: str = "NDHWC",
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """
     Computes a 3-D max pool given 5-D input x.
@@ -984,14 +986,14 @@ def max_pool3d(
 
 
 def avg_pool1d(
-    self: ivy.Array,
-    kernel: Union[int, Tuple[int]],
-    strides: Union[int, Tuple[int]],
-    padding: str,
-    /,
-    *,
-    data_format: str = "NWC",
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        kernel: Union[int, Tuple[int]],
+        strides: Union[int, Tuple[int]],
+        padding: str,
+        /,
+        *,
+        data_format: str = "NWC",
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of `ivy.avg_pool1d`. This method simply
@@ -1040,14 +1042,14 @@ def avg_pool1d(
 
 
 def avg_pool2d(
-    self: ivy.Array,
-    kernel: Union[int, Tuple[int], Tuple[int, int]],
-    strides: Union[int, Tuple[int], Tuple[int, int]],
-    padding: str,
-    /,
-    *,
-    data_format: str = "NHWC",
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        kernel: Union[int, Tuple[int], Tuple[int, int]],
+        strides: Union[int, Tuple[int], Tuple[int, int]],
+        padding: str,
+        /,
+        *,
+        data_format: str = "NHWC",
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of `ivy.avg_pool2d`. This method simply
@@ -1098,14 +1100,14 @@ def avg_pool2d(
 
 
 def avg_pool3d(
-    self: ivy.Array,
-    kernel: Union[int, Tuple[int], Tuple[int, int, int]],
-    strides: Union[int, Tuple[int], Tuple[int, int, int]],
-    padding: str,
-    /,
-    *,
-    data_format: str = "NDHWC",
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        kernel: Union[int, Tuple[int], Tuple[int, int, int]],
+        strides: Union[int, Tuple[int], Tuple[int, int, int]],
+        padding: str,
+        /,
+        *,
+        data_format: str = "NDHWC",
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """
     Computes a 3-D max pool given 5-D input x.
@@ -1158,14 +1160,14 @@ def avg_pool3d(
 
 
 def dct(
-    self: ivy.Array,
-    /,
-    *,
-    type: Optional[Literal[1, 2, 3, 4]] = 2,
-    n: Optional[int] = None,
-    axis: Optional[int] = -1,
-    norm: Optional[Literal["ortho"]] = None,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        *,
+        type: Optional[Literal[1, 2, 3, 4]] = 2,
+        n: Optional[int] = None,
+        axis: Optional[int] = -1,
+        norm: Optional[Literal["ortho"]] = None,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.dct. This method simply
     wraps the function, and so the docstring for ivy.dct also applies to
@@ -1199,7 +1201,7 @@ def dct(
     pass
 
 
-#ivy.array.experimental.linear_algebra
+# ivy.array.experimental.linear_algebra
 # global
 import abc
 from typing import Optional, Union
@@ -1209,14 +1211,14 @@ import ivy
 
 
 def diagflat(
-    self: Union[ivy.Array, ivy.NativeArray],
-    *,
-    offset: Optional[int] = 0,
-    padding_value: Optional[float] = 0,
-    align: Optional[str] = "RIGHT_LEFT",
-    num_rows: Optional[int] = -1,
-    num_cols: Optional[int] = -1,
-    out: Optional[Union[ivy.Array, ivy.NativeArray]] = None,
+        self: Union[ivy.Array, ivy.NativeArray],
+        *,
+        offset: Optional[int] = 0,
+        padding_value: Optional[float] = 0,
+        align: Optional[str] = "RIGHT_LEFT",
+        num_rows: Optional[int] = -1,
+        num_cols: Optional[int] = -1,
+        out: Optional[Union[ivy.Array, ivy.NativeArray]] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.diagflat.
@@ -1235,11 +1237,11 @@ def diagflat(
 
 
 def kron(
-    self: ivy.Array,
-    b: ivy.Array,
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        b: ivy.Array,
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.kron.
@@ -1256,7 +1258,7 @@ def kron(
     pass
 
 
-#ivy.array.experimental.manipulation
+# ivy.array.experimental.manipulation
 # global
 import abc
 from typing import (
@@ -1277,12 +1279,12 @@ import ivy
 
 
 def moveaxis(
-    self: ivy.Array,
-    source: Union[int, Sequence[int]],
-    destination: Union[int, Sequence[int]],
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        source: Union[int, Sequence[int]],
+        destination: Union[int, Sequence[int]],
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.moveaxis. This method simply
     wraps the function, and so the docstring for ivy.unstack also applies to
@@ -1317,11 +1319,11 @@ def moveaxis(
 
 
 def heaviside(
-    self: ivy.Array,
-    x2: ivy.Array,
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        x2: ivy.Array,
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.heaviside. This method simply
     wraps the function, and so the docstring for ivy.heaviside also applies to
@@ -1358,10 +1360,10 @@ def heaviside(
 
 
 def flipud(
-    self: ivy.Array,
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.flipud. This method simply
     wraps the function, and so the docstring for ivy.flipud also applies to
@@ -1392,14 +1394,14 @@ def flipud(
 
 
 def vstack(
-    self: ivy.Array,
-    /,
-    arrays: Union[
-        Tuple[Union[ivy.Array, ivy.NativeArray]],
-        List[Union[ivy.Array, ivy.NativeArray]],
-    ],
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        arrays: Union[
+            Tuple[Union[ivy.Array, ivy.NativeArray]],
+            List[Union[ivy.Array, ivy.NativeArray]],
+        ],
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.vstack. This method simply
@@ -1419,14 +1421,14 @@ def vstack(
 
 
 def hstack(
-    self: ivy.Array,
-    /,
-    arrays: Union[
-        Tuple[Union[ivy.Array, ivy.NativeArray]],
-        List[Union[ivy.Array, ivy.NativeArray]],
-    ],
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        arrays: Union[
+            Tuple[Union[ivy.Array, ivy.NativeArray]],
+            List[Union[ivy.Array, ivy.NativeArray]],
+        ],
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.hstack. This method simply
@@ -1445,12 +1447,12 @@ def hstack(
 
 
 def rot90(
-    self: ivy.Array,
-    /,
-    *,
-    k: Optional[int] = 1,
-    axes: Optional[Tuple[int, int]] = (0, 1),
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        *,
+        k: Optional[int] = 1,
+        axes: Optional[Tuple[int, int]] = (0, 1),
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.rot90.
@@ -1501,13 +1503,13 @@ def rot90(
 
 
 def top_k(
-    self: ivy.Array,
-    k: int,
-    /,
-    *,
-    axis: Optional[int] = None,
-    largest: Optional[bool] = True,
-    out: Optional[tuple] = None,
+        self: ivy.Array,
+        k: int,
+        /,
+        *,
+        axis: Optional[int] = None,
+        largest: Optional[bool] = True,
+        out: Optional[tuple] = None,
 ) -> Tuple[ivy.Array, ivy.NativeArray]:
     """ivy.Array instance method variant of ivy.top_k. This method simply
     wraps the function, and so the docstring for ivy.top_k also applies
@@ -1543,11 +1545,12 @@ def top_k(
     """
     return ivy.top_k(self, k, axis=axis, largest=largest, out=out)
 
+
 def fliplr(
-    self: ivy.Array,
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.fliplr. This method simply
     wraps the function, and so the docstring for ivy.fliplr also applies to
@@ -1578,10 +1581,10 @@ def fliplr(
 
 
 def i0(
-    self: ivy.Array,
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.i0. This method simply
@@ -1610,11 +1613,11 @@ def i0(
 
 
 def flatten(
-    self: ivy.Array,
-    *,
-    start_dim: Optional[int] = 0,
-    end_dim: Optional[int] = -1,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        *,
+        start_dim: Optional[int] = 0,
+        end_dim: Optional[int] = -1,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.flatten. This method simply
     wraps the function, and so the docstring for ivy.flatten also applies to
@@ -1694,34 +1697,34 @@ def flatten(
 
 
 def pad(
-    self: ivy.Array,
-    pad_width: Union[Iterable[Tuple[int]], int],
-    /,
-    *,
-    mode: Optional[
-        Union[
-            Literal[
-                "constant",
-                "edge",
-                "linear_ramp",
-                "maximum",
-                "mean",
-                "median",
-                "minimum",
-                "reflect",
-                "symmetric",
-                "wrap",
-                "empty",
-            ],
-            Callable,
-        ]
-    ] = "constant",
-    stat_length: Optional[Union[Iterable[Tuple[int]], int]] = None,
-    constant_values: Optional[Union[Iterable[Tuple[Number]], Number]] = 0,
-    end_values: Optional[Union[Iterable[Tuple[Number]], Number]] = 0,
-    reflect_type: Optional[Literal["even", "odd"]] = "even",
-    out: Optional[ivy.Array] = None,
-    **kwargs: Optional[Any],
+        self: ivy.Array,
+        pad_width: Union[Iterable[Tuple[int]], int],
+        /,
+        *,
+        mode: Optional[
+            Union[
+                Literal[
+                    "constant",
+                    "edge",
+                    "linear_ramp",
+                    "maximum",
+                    "mean",
+                    "median",
+                    "minimum",
+                    "reflect",
+                    "symmetric",
+                    "wrap",
+                    "empty",
+                ],
+                Callable,
+            ]
+        ] = "constant",
+        stat_length: Optional[Union[Iterable[Tuple[int]], int]] = None,
+        constant_values: Optional[Union[Iterable[Tuple[Number]], Number]] = 0,
+        end_values: Optional[Union[Iterable[Tuple[Number]], Number]] = 0,
+        reflect_type: Optional[Literal["even", "odd"]] = "even",
+        out: Optional[ivy.Array] = None,
+        **kwargs: Optional[Any],
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.pad. This method simply
@@ -1732,11 +1735,11 @@ def pad(
 
 
 def vsplit(
-    self: ivy.Array,
-    indices_or_sections: Union[int, Tuple[int]],
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        indices_or_sections: Union[int, Tuple[int]],
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.vsplit. This method simply
@@ -1778,11 +1781,11 @@ def vsplit(
 
 
 def dsplit(
-    self: ivy.Array,
-    indices_or_sections: Union[int, Tuple[int]],
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        indices_or_sections: Union[int, Tuple[int]],
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.dsplit. This method simply
@@ -1825,14 +1828,14 @@ def dsplit(
 
 
 def dstack(
-    self: ivy.Array,
-    /,
-    arrays: Union[
-        Tuple[Union[ivy.Array, ivy.NativeArray]],
-        List[Union[ivy.Array, ivy.NativeArray]],
-    ],
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        arrays: Union[
+            Tuple[Union[ivy.Array, ivy.NativeArray]],
+            List[Union[ivy.Array, ivy.NativeArray]],
+        ],
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.dstack. This method simply
@@ -1879,7 +1882,8 @@ def atleast_2d(self: ivy.Array, *arys: ivy.Array) -> List[ivy.Array]:
     """
     return ivy.atleast_2d(self._data, *arys)
 
-#ivy.array.experimental.random
+
+# ivy.array.experimental.random
 # global
 import abc
 from typing import Optional, Union
@@ -1889,13 +1893,13 @@ import ivy
 
 
 def dirichlet(
-    self: ivy.Array,
-    /,
-    *,
-    size: Optional[Union[ivy.Shape, ivy.NativeShape]] = None,
-    dtype: Optional[Union[ivy.Dtype, ivy.NativeDtype]] = None,
-    seed: Optional[int] = None,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        *,
+        size: Optional[Union[ivy.Shape, ivy.NativeShape]] = None,
+        dtype: Optional[Union[ivy.Dtype, ivy.NativeDtype]] = None,
+        seed: Optional[int] = None,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.dirichlet. This method simply
     wraps the function, and so the docstring for ivy.shuffle also applies to
@@ -1941,7 +1945,7 @@ def dirichlet(
     pass
 
 
-#ivy.array.experimental.sorting
+# ivy.array.experimental.sorting
 # global
 import abc
 from typing import Optional
@@ -1952,10 +1956,10 @@ import ivy
 
 
 def msort(
-    self: ivy.Array,
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.msort. This method simply wraps the
@@ -1986,7 +1990,7 @@ def msort(
     pass
 
 
-#ivy.array.experimental.statistical
+# ivy.array.experimental.statistical
 # global
 import abc
 from typing import Optional, Union, Tuple
@@ -1996,12 +2000,12 @@ import ivy
 
 
 def median(
-    self: ivy.Array,
-    /,
-    *,
-    axis: Optional[Union[Tuple[int], int]] = None,
-    keepdims: Optional[bool] = False,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        *,
+        axis: Optional[Union[Tuple[int], int]] = None,
+        keepdims: Optional[bool] = False,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.median. This method simply
     wraps the function, and so the docstring for ivy.median also applies to
@@ -2037,13 +2041,13 @@ def median(
 
 
 def nanmean(
-    self: ivy.Array,
-    /,
-    *,
-    axis: Optional[Union[Tuple[int], int]] = None,
-    keepdims: Optional[bool] = False,
-    dtype: Optional[Union[ivy.Dtype, ivy.NativeDtype]] = None,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        *,
+        axis: Optional[Union[Tuple[int], int]] = None,
+        keepdims: Optional[bool] = False,
+        dtype: Optional[Union[ivy.Dtype, ivy.NativeDtype]] = None,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.nanmean. This method simply
     wraps the function, and so the docstring for ivy.nanmean also applies to
@@ -2085,11 +2089,11 @@ def nanmean(
 
 
 def unravel_index(
-    self: ivy.Array,
-    shape: Tuple[int],
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        shape: Tuple[int],
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.unravel_index. This method simply
     wraps the function, and so the docstring for ivy.unravel_index also applies to
@@ -2118,7 +2122,7 @@ def unravel_index(
     pass
 
 
-#ivy.array.experimental.elementwise
+# ivy.array.experimental.elementwise
 # global
 import abc
 from typing import Optional, Union, Tuple
@@ -2160,7 +2164,7 @@ def sinc(self: ivy.Array, *, out: Optional[ivy.Array] = None) -> ivy.Array:
 
 
 def lcm(
-    self: ivy.Array, x2: ivy.Array, *, out: Optional[ivy.Array] = None
+        self: ivy.Array, x2: ivy.Array, *, out: Optional[ivy.Array] = None
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.lcm. This method simply wraps the
@@ -2193,11 +2197,11 @@ def lcm(
 
 
 def fmod(
-    self: ivy.Array,
-    x2: ivy.Array,
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        x2: ivy.Array,
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.fmod. This method simply
     wraps the function, and so the docstring for ivy.fmod also applies to
@@ -2234,11 +2238,11 @@ def fmod(
 
 
 def fmax(
-    self: ivy.Array,
-    x2: ivy.Array,
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        x2: ivy.Array,
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.fmax. This method simply
     wraps the function, and so the docstring for ivy.fmax also applies to
@@ -2275,13 +2279,13 @@ def fmax(
 
 
 def trapz(
-    self: ivy.Array,
-    /,
-    *,
-    x: Optional[ivy.Array] = None,
-    dx: Optional[float] = 1.0,
-    axis: Optional[int] = -1,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        *,
+        x: Optional[ivy.Array] = None,
+        dx: Optional[float] = 1.0,
+        axis: Optional[int] = -1,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.trapz. This method simply
     wraps the function, and so the docstring for ivy.trapz also applies to
@@ -2327,11 +2331,11 @@ def trapz(
 
 
 def float_power(
-    self: Union[ivy.Array, float, list, tuple],
-    x2: Union[ivy.Array, float, list, tuple],
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: Union[ivy.Array, float, list, tuple],
+        x2: Union[ivy.Array, float, list, tuple],
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.float_power. This method simply
     wraps the function, and so the docstring for ivy.float_power also applies to
@@ -2368,10 +2372,10 @@ def float_power(
 
 
 def exp2(
-    self: Union[ivy.Array, float, list, tuple],
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: Union[ivy.Array, float, list, tuple],
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.exp2. This method simply
     wraps the function, and so the docstring for ivy.exp2 also applies to
@@ -2402,13 +2406,13 @@ def exp2(
 
 
 def count_nonzero(
-    self: ivy.Array,
-    /,
-    *,
-    axis: Optional[Union[int, Tuple[int, ...]]] = None,
-    keepdims: Optional[bool] = False,
-    dtype: Optional[Union[ivy.Dtype, ivy.NativeDtype]] = None,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        *,
+        axis: Optional[Union[int, Tuple[int, ...]]] = None,
+        keepdims: Optional[bool] = False,
+        dtype: Optional[Union[ivy.Dtype, ivy.NativeDtype]] = None,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.count_nonzero. This method simply
     wraps the function, and so the docstring for ivy.count_nonzero also applies to
@@ -2454,13 +2458,13 @@ def count_nonzero(
 
 
 def nansum(
-    self: ivy.Array,
-    /,
-    *,
-    axis: Optional[Union[tuple, int]] = None,
-    dtype: Optional[Union[ivy.Dtype, ivy.NativeDtype]] = None,
-    keepdims: Optional[bool] = False,
-    out: Optional[ivy.Container] = None,
+        self: ivy.Array,
+        /,
+        *,
+        axis: Optional[Union[tuple, int]] = None,
+        dtype: Optional[Union[ivy.Dtype, ivy.NativeDtype]] = None,
+        keepdims: Optional[bool] = False,
+        out: Optional[ivy.Container] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.nansum. This method simply
@@ -2504,11 +2508,11 @@ def nansum(
 
 
 def gcd(
-    self: Union[ivy.Array, int, list, tuple],
-    x2: Union[ivy.Array, int, list, tuple],
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: Union[ivy.Array, int, list, tuple],
+        x2: Union[ivy.Array, int, list, tuple],
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.gcd. This method simply
     wraps the function, and so the docstring for ivy.gcd also applies to
@@ -2542,14 +2546,14 @@ def gcd(
 
 
 def isclose(
-    self: ivy.Array,
-    b: ivy.Array,
-    /,
-    *,
-    rtol: Optional[float] = 1e-05,
-    atol: Optional[float] = 1e-08,
-    equal_nan: Optional[bool] = False,
-    out: Optional[ivy.Container] = None,
+        self: ivy.Array,
+        b: ivy.Array,
+        /,
+        *,
+        rtol: Optional[float] = 1e-05,
+        atol: Optional[float] = 1e-08,
+        equal_nan: Optional[bool] = False,
+        out: Optional[ivy.Container] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.isclose. This method simply
@@ -2600,10 +2604,10 @@ def isclose(
 
 
 def isposinf(
-    self: Union[ivy.Array, float, list, tuple],
-    /,
-    *,
-    out: Optional[ivy.Container] = None,
+        self: Union[ivy.Array, float, list, tuple],
+        /,
+        *,
+        out: Optional[ivy.Container] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.isposinf. This method simply
@@ -2636,10 +2640,10 @@ def isposinf(
 
 
 def isneginf(
-    self: Union[ivy.Array, float, list, tuple],
-    /,
-    *,
-    out: Optional[ivy.Container] = None,
+        self: Union[ivy.Array, float, list, tuple],
+        /,
+        *,
+        out: Optional[ivy.Container] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.isneginf. This method simply
@@ -2672,14 +2676,14 @@ def isneginf(
 
 
 def nan_to_num(
-    self: ivy.Array,
-    /,
-    *,
-    copy: Optional[bool] = True,
-    nan: Optional[Union[float, int]] = 0.0,
-    posinf: Optional[Union[float, int]] = None,
-    neginf: Optional[Union[float, int]] = None,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        *,
+        copy: Optional[bool] = True,
+        nan: Optional[Union[float, int]] = 0.0,
+        posinf: Optional[Union[float, int]] = None,
+        neginf: Optional[Union[float, int]] = None,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.nan_to_num. This method simply
     wraps the function, and so the docstring for ivy.nan_to_num also applies to
@@ -2725,11 +2729,11 @@ def nan_to_num(
 
 
 def logaddexp2(
-    self: Union[ivy.Array, float, list, tuple],
-    x2: Union[ivy.Array, float, list, tuple],
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: Union[ivy.Array, float, list, tuple],
+        x2: Union[ivy.Array, float, list, tuple],
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.logaddexp2. This method
     simply wraps the function, and so the docstring for ivy.logaddexp2 also
@@ -2760,11 +2764,11 @@ def logaddexp2(
 
 
 def signbit(
-    self: Union[ivy.Array, float, int, list, tuple],
-    x2: Union[ivy.Array, float, int, list, tuple],
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: Union[ivy.Array, float, int, list, tuple],
+        x2: Union[ivy.Array, float, int, list, tuple],
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.signbit. This method
     simply wraps the function, and so the docstring for ivy.signbit also
@@ -2792,14 +2796,14 @@ def signbit(
 
 
 def allclose(
-    self: ivy.Array,
-    x2: ivy.Array,
-    /,
-    *,
-    rtol: Optional[float] = 1e-05,
-    atol: Optional[float] = 1e-08,
-    equal_nan: Optional[bool] = False,
-    out: Optional[ivy.Container] = None,
+        self: ivy.Array,
+        x2: ivy.Array,
+        /,
+        *,
+        rtol: Optional[float] = 1e-05,
+        atol: Optional[float] = 1e-08,
+        equal_nan: Optional[bool] = False,
+        out: Optional[ivy.Container] = None,
 ) -> bool:
     """
     ivy.Array instance method variant of ivy.allclose. This method simply
@@ -2853,11 +2857,12 @@ def allclose(
         self._data, x2, rtol=rtol, atol=atol, equal_nan=equal_nan, out=out
     )
 
+
 def fix(
-    self: ivy.Array,
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.fix. This method
     simply wraps the function, and so the docstring for ivy.fix also
@@ -2886,11 +2891,11 @@ def fix(
 
 
 def nextafter(
-    self: ivy.Array,
-    x2: ivy.Array,
-    /,
-    *,
-    out: Optional[ivy.Container] = None,
+        self: ivy.Array,
+        x2: ivy.Array,
+        /,
+        *,
+        out: Optional[ivy.Container] = None,
 ) -> bool:
     """
     ivy.Array instance method variant of ivy.nextafter. This method simply
@@ -2921,7 +2926,8 @@ def nextafter(
     """
     return ivy.nextafter(self._data, x2, out=out)
 
-#ivy.array.experimental.layers
+
+# ivy.array.experimental.layers
 # global
 import abc
 from typing import Optional, Union, Tuple, Literal
@@ -2931,14 +2937,14 @@ import ivy
 
 
 def max_pool1d(
-    self: ivy.Array,
-    kernel: Union[int, Tuple[int]],
-    strides: Union[int, Tuple[int]],
-    padding: str,
-    /,
-    *,
-    data_format: str = "NHWC",
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        kernel: Union[int, Tuple[int]],
+        strides: Union[int, Tuple[int]],
+        padding: str,
+        /,
+        *,
+        data_format: str = "NHWC",
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of `ivy.max_pool1d`. This method simply
@@ -2986,14 +2992,14 @@ def max_pool1d(
 
 
 def max_pool2d(
-    self: ivy.Array,
-    kernel: Union[int, Tuple[int], Tuple[int, int]],
-    strides: Union[int, Tuple[int], Tuple[int, int]],
-    padding: str,
-    /,
-    *,
-    data_format: str = "NHWC",
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        kernel: Union[int, Tuple[int], Tuple[int, int]],
+        strides: Union[int, Tuple[int], Tuple[int, int]],
+        padding: str,
+        /,
+        *,
+        data_format: str = "NHWC",
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of `ivy.max_pool2d`. This method simply
@@ -3044,14 +3050,14 @@ def max_pool2d(
 
 
 def max_pool3d(
-    self: ivy.Array,
-    kernel: Union[int, Tuple[int], Tuple[int, int, int]],
-    strides: Union[int, Tuple[int], Tuple[int, int, int]],
-    padding: str,
-    /,
-    *,
-    data_format: str = "NDHWC",
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        kernel: Union[int, Tuple[int], Tuple[int, int, int]],
+        strides: Union[int, Tuple[int], Tuple[int, int, int]],
+        padding: str,
+        /,
+        *,
+        data_format: str = "NDHWC",
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """
     Computes a 3-D max pool given 5-D input x.
@@ -3104,14 +3110,14 @@ def max_pool3d(
 
 
 def avg_pool1d(
-    self: ivy.Array,
-    kernel: Union[int, Tuple[int]],
-    strides: Union[int, Tuple[int]],
-    padding: str,
-    /,
-    *,
-    data_format: str = "NWC",
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        kernel: Union[int, Tuple[int]],
+        strides: Union[int, Tuple[int]],
+        padding: str,
+        /,
+        *,
+        data_format: str = "NWC",
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of `ivy.avg_pool1d`. This method simply
@@ -3160,14 +3166,14 @@ def avg_pool1d(
 
 
 def avg_pool2d(
-    self: ivy.Array,
-    kernel: Union[int, Tuple[int], Tuple[int, int]],
-    strides: Union[int, Tuple[int], Tuple[int, int]],
-    padding: str,
-    /,
-    *,
-    data_format: str = "NHWC",
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        kernel: Union[int, Tuple[int], Tuple[int, int]],
+        strides: Union[int, Tuple[int], Tuple[int, int]],
+        padding: str,
+        /,
+        *,
+        data_format: str = "NHWC",
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of `ivy.avg_pool2d`. This method simply
@@ -3218,14 +3224,14 @@ def avg_pool2d(
 
 
 def avg_pool3d(
-    self: ivy.Array,
-    kernel: Union[int, Tuple[int], Tuple[int, int, int]],
-    strides: Union[int, Tuple[int], Tuple[int, int, int]],
-    padding: str,
-    /,
-    *,
-    data_format: str = "NDHWC",
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        kernel: Union[int, Tuple[int], Tuple[int, int, int]],
+        strides: Union[int, Tuple[int], Tuple[int, int, int]],
+        padding: str,
+        /,
+        *,
+        data_format: str = "NDHWC",
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """
     Computes a 3-D max pool given 5-D input x.
@@ -3278,14 +3284,14 @@ def avg_pool3d(
 
 
 def dct(
-    self: ivy.Array,
-    /,
-    *,
-    type: Optional[Literal[1, 2, 3, 4]] = 2,
-    n: Optional[int] = None,
-    axis: Optional[int] = -1,
-    norm: Optional[Literal["ortho"]] = None,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        *,
+        type: Optional[Literal[1, 2, 3, 4]] = 2,
+        n: Optional[int] = None,
+        axis: Optional[int] = -1,
+        norm: Optional[Literal["ortho"]] = None,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.dct. This method simply
     wraps the function, and so the docstring for ivy.dct also applies to
@@ -3319,7 +3325,7 @@ def dct(
     pass
 
 
-#ivy.array.experimental.linear_algebra
+# ivy.array.experimental.linear_algebra
 # global
 import abc
 from typing import Optional, Union
@@ -3329,14 +3335,14 @@ import ivy
 
 
 def diagflat(
-    self: Union[ivy.Array, ivy.NativeArray],
-    *,
-    offset: Optional[int] = 0,
-    padding_value: Optional[float] = 0,
-    align: Optional[str] = "RIGHT_LEFT",
-    num_rows: Optional[int] = -1,
-    num_cols: Optional[int] = -1,
-    out: Optional[Union[ivy.Array, ivy.NativeArray]] = None,
+        self: Union[ivy.Array, ivy.NativeArray],
+        *,
+        offset: Optional[int] = 0,
+        padding_value: Optional[float] = 0,
+        align: Optional[str] = "RIGHT_LEFT",
+        num_rows: Optional[int] = -1,
+        num_cols: Optional[int] = -1,
+        out: Optional[Union[ivy.Array, ivy.NativeArray]] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.diagflat.
@@ -3355,11 +3361,11 @@ def diagflat(
 
 
 def kron(
-    self: ivy.Array,
-    b: ivy.Array,
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        b: ivy.Array,
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.kron.
@@ -3376,7 +3382,7 @@ def kron(
     pass
 
 
-#ivy.array.experimental.manipulation
+# ivy.array.experimental.manipulation
 # global
 import abc
 from typing import (
@@ -3397,12 +3403,12 @@ import ivy
 
 
 def moveaxis(
-    self: ivy.Array,
-    source: Union[int, Sequence[int]],
-    destination: Union[int, Sequence[int]],
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        source: Union[int, Sequence[int]],
+        destination: Union[int, Sequence[int]],
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.moveaxis. This method simply
     wraps the function, and so the docstring for ivy.unstack also applies to
@@ -3437,11 +3443,11 @@ def moveaxis(
 
 
 def heaviside(
-    self: ivy.Array,
-    x2: ivy.Array,
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        x2: ivy.Array,
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.heaviside. This method simply
     wraps the function, and so the docstring for ivy.heaviside also applies to
@@ -3478,10 +3484,10 @@ def heaviside(
 
 
 def flipud(
-    self: ivy.Array,
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.flipud. This method simply
     wraps the function, and so the docstring for ivy.flipud also applies to
@@ -3512,14 +3518,14 @@ def flipud(
 
 
 def vstack(
-    self: ivy.Array,
-    /,
-    arrays: Union[
-        Tuple[Union[ivy.Array, ivy.NativeArray]],
-        List[Union[ivy.Array, ivy.NativeArray]],
-    ],
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        arrays: Union[
+            Tuple[Union[ivy.Array, ivy.NativeArray]],
+            List[Union[ivy.Array, ivy.NativeArray]],
+        ],
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.vstack. This method simply
@@ -3539,14 +3545,14 @@ def vstack(
 
 
 def hstack(
-    self: ivy.Array,
-    /,
-    arrays: Union[
-        Tuple[Union[ivy.Array, ivy.NativeArray]],
-        List[Union[ivy.Array, ivy.NativeArray]],
-    ],
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        arrays: Union[
+            Tuple[Union[ivy.Array, ivy.NativeArray]],
+            List[Union[ivy.Array, ivy.NativeArray]],
+        ],
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.hstack. This method simply
@@ -3565,12 +3571,12 @@ def hstack(
 
 
 def rot90(
-    self: ivy.Array,
-    /,
-    *,
-    k: Optional[int] = 1,
-    axes: Optional[Tuple[int, int]] = (0, 1),
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        *,
+        k: Optional[int] = 1,
+        axes: Optional[Tuple[int, int]] = (0, 1),
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.rot90.
@@ -3621,13 +3627,13 @@ def rot90(
 
 
 def top_k(
-    self: ivy.Array,
-    k: int,
-    /,
-    *,
-    axis: Optional[int] = None,
-    largest: Optional[bool] = True,
-    out: Optional[tuple] = None,
+        self: ivy.Array,
+        k: int,
+        /,
+        *,
+        axis: Optional[int] = None,
+        largest: Optional[bool] = True,
+        out: Optional[tuple] = None,
 ) -> Tuple[ivy.Array, ivy.NativeArray]:
     """ivy.Array instance method variant of ivy.top_k. This method simply
     wraps the function, and so the docstring for ivy.top_k also applies
@@ -3663,11 +3669,12 @@ def top_k(
     """
     return ivy.top_k(self, k, axis=axis, largest=largest, out=out)
 
+
 def fliplr(
-    self: ivy.Array,
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.fliplr. This method simply
     wraps the function, and so the docstring for ivy.fliplr also applies to
@@ -3698,10 +3705,10 @@ def fliplr(
 
 
 def i0(
-    self: ivy.Array,
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.i0. This method simply
@@ -3730,11 +3737,11 @@ def i0(
 
 
 def flatten(
-    self: ivy.Array,
-    *,
-    start_dim: Optional[int] = 0,
-    end_dim: Optional[int] = -1,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        *,
+        start_dim: Optional[int] = 0,
+        end_dim: Optional[int] = -1,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.flatten. This method simply
     wraps the function, and so the docstring for ivy.flatten also applies to
@@ -3814,34 +3821,34 @@ def flatten(
 
 
 def pad(
-    self: ivy.Array,
-    pad_width: Union[Iterable[Tuple[int]], int],
-    /,
-    *,
-    mode: Optional[
-        Union[
-            Literal[
-                "constant",
-                "edge",
-                "linear_ramp",
-                "maximum",
-                "mean",
-                "median",
-                "minimum",
-                "reflect",
-                "symmetric",
-                "wrap",
-                "empty",
-            ],
-            Callable,
-        ]
-    ] = "constant",
-    stat_length: Optional[Union[Iterable[Tuple[int]], int]] = None,
-    constant_values: Optional[Union[Iterable[Tuple[Number]], Number]] = 0,
-    end_values: Optional[Union[Iterable[Tuple[Number]], Number]] = 0,
-    reflect_type: Optional[Literal["even", "odd"]] = "even",
-    out: Optional[ivy.Array] = None,
-    **kwargs: Optional[Any],
+        self: ivy.Array,
+        pad_width: Union[Iterable[Tuple[int]], int],
+        /,
+        *,
+        mode: Optional[
+            Union[
+                Literal[
+                    "constant",
+                    "edge",
+                    "linear_ramp",
+                    "maximum",
+                    "mean",
+                    "median",
+                    "minimum",
+                    "reflect",
+                    "symmetric",
+                    "wrap",
+                    "empty",
+                ],
+                Callable,
+            ]
+        ] = "constant",
+        stat_length: Optional[Union[Iterable[Tuple[int]], int]] = None,
+        constant_values: Optional[Union[Iterable[Tuple[Number]], Number]] = 0,
+        end_values: Optional[Union[Iterable[Tuple[Number]], Number]] = 0,
+        reflect_type: Optional[Literal["even", "odd"]] = "even",
+        out: Optional[ivy.Array] = None,
+        **kwargs: Optional[Any],
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.pad. This method simply
@@ -3852,11 +3859,11 @@ def pad(
 
 
 def vsplit(
-    self: ivy.Array,
-    indices_or_sections: Union[int, Tuple[int]],
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        indices_or_sections: Union[int, Tuple[int]],
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.vsplit. This method simply
@@ -3898,11 +3905,11 @@ def vsplit(
 
 
 def dsplit(
-    self: ivy.Array,
-    indices_or_sections: Union[int, Tuple[int]],
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        indices_or_sections: Union[int, Tuple[int]],
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.dsplit. This method simply
@@ -3945,14 +3952,14 @@ def dsplit(
 
 
 def dstack(
-    self: ivy.Array,
-    /,
-    arrays: Union[
-        Tuple[Union[ivy.Array, ivy.NativeArray]],
-        List[Union[ivy.Array, ivy.NativeArray]],
-    ],
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        arrays: Union[
+            Tuple[Union[ivy.Array, ivy.NativeArray]],
+            List[Union[ivy.Array, ivy.NativeArray]],
+        ],
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.dstack. This method simply
@@ -3999,7 +4006,8 @@ def atleast_2d(self: ivy.Array, *arys: ivy.Array) -> List[ivy.Array]:
     """
     return ivy.atleast_2d(self._data, *arys)
 
-#ivy.array.experimental.random
+
+# ivy.array.experimental.random
 # global
 import abc
 from typing import Optional, Union
@@ -4009,13 +4017,13 @@ import ivy
 
 
 def dirichlet(
-    self: ivy.Array,
-    /,
-    *,
-    size: Optional[Union[ivy.Shape, ivy.NativeShape]] = None,
-    dtype: Optional[Union[ivy.Dtype, ivy.NativeDtype]] = None,
-    seed: Optional[int] = None,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        *,
+        size: Optional[Union[ivy.Shape, ivy.NativeShape]] = None,
+        dtype: Optional[Union[ivy.Dtype, ivy.NativeDtype]] = None,
+        seed: Optional[int] = None,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.dirichlet. This method simply
     wraps the function, and so the docstring for ivy.shuffle also applies to
@@ -4061,7 +4069,7 @@ def dirichlet(
     pass
 
 
-#ivy.array.experimental.sorting
+# ivy.array.experimental.sorting
 # global
 import abc
 from typing import Optional
@@ -4072,10 +4080,10 @@ import ivy
 
 
 def msort(
-    self: ivy.Array,
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """
     ivy.Array instance method variant of ivy.msort. This method simply wraps the
@@ -4106,7 +4114,7 @@ def msort(
     pass
 
 
-#ivy.array.experimental.statistical
+# ivy.array.experimental.statistical
 # global
 import abc
 from typing import Optional, Union, Tuple
@@ -4116,12 +4124,12 @@ import ivy
 
 
 def median(
-    self: ivy.Array,
-    /,
-    *,
-    axis: Optional[Union[Tuple[int], int]] = None,
-    keepdims: Optional[bool] = False,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        *,
+        axis: Optional[Union[Tuple[int], int]] = None,
+        keepdims: Optional[bool] = False,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.median. This method simply
     wraps the function, and so the docstring for ivy.median also applies to
@@ -4157,13 +4165,13 @@ def median(
 
 
 def nanmean(
-    self: ivy.Array,
-    /,
-    *,
-    axis: Optional[Union[Tuple[int], int]] = None,
-    keepdims: Optional[bool] = False,
-    dtype: Optional[Union[ivy.Dtype, ivy.NativeDtype]] = None,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        /,
+        *,
+        axis: Optional[Union[Tuple[int], int]] = None,
+        keepdims: Optional[bool] = False,
+        dtype: Optional[Union[ivy.Dtype, ivy.NativeDtype]] = None,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.nanmean. This method simply
     wraps the function, and so the docstring for ivy.nanmean also applies to
@@ -4205,11 +4213,11 @@ def nanmean(
 
 
 def unravel_index(
-    self: ivy.Array,
-    shape: Tuple[int],
-    /,
-    *,
-    out: Optional[ivy.Array] = None,
+        self: ivy.Array,
+        shape: Tuple[int],
+        /,
+        *,
+        out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """ivy.Array instance method variant of ivy.unravel_index. This method simply
     wraps the function, and so the docstring for ivy.unravel_index also applies to
@@ -4236,5 +4244,3 @@ def unravel_index(
     (ivy.array([3, 6, 6]), ivy.array([4, 5, 1]))
     """
     pass
-
-

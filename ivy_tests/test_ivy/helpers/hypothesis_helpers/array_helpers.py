@@ -646,6 +646,7 @@ def array_values(
     -------
         A strategy that draws a list.
     """
+    global dtype_info, values
     assert small_abs_safety_factor >= 1, "small_abs_safety_factor must be >= 1"
     assert large_abs_safety_factor >= 1, "large_value_safety_factor must be >= 1"
 
@@ -875,6 +876,7 @@ def array_and_broadcastable_shape(draw, dtype):
 
 @st.composite
 def arrays_for_pooling(draw, min_dims, max_dims, min_side, max_side):
+    global kernel
     in_shape = draw(
         nph.array_shapes(
             min_dims=min_dims, max_dims=max_dims, min_side=min_side, max_side=max_side

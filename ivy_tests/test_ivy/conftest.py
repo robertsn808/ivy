@@ -5,7 +5,7 @@ from typing import Dict
 
 # local
 from ivy import DefaultDevice
-from ivy_tests.test_ivy.helpers import globals as test_globals
+from ivy_tests.test_ivy.helpers import gh as test_globals
 
 
 GENERAL_CONFIG_DICT = {}
