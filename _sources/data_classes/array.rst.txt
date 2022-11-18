@@ -43,6 +43,7 @@ Array
    array/set.rst
    array/sorting.rst
    array/statistical.rst
+   array/ufunc.rst
    array/utility.rst
    array/wrapping.rst
 

@@ -44,6 +44,7 @@ Container
    container/set.rst
    container/sorting.rst
    container/statistical.rst
+   container/ufunc.rst
    container/utility.rst
    container/wrapping.rst
 

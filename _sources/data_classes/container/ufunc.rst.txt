@@ -1,0 +1,17 @@
+Ufunc
+=====
+
+.. automodule:: ivy.container.ufunc
+    :members:
+    :special-members: __init__
+    :undoc-members:
+    :show-inheritance:
+
+
+.. toctree::
+   :hidden:
+   :maxdepth: -1
+   :caption: Ufunc
+
+   ufunc/avg_pool3d.rst
+
