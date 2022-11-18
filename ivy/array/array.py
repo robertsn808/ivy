@@ -212,6 +212,66 @@ class Array(
     # Built-ins #
     # ----------#
 
+    def __add__(self, other):
+        """
+        ivy.Array special method variant of ivy.add. This method simply wraps the
+        function, and so the docstring for ivy.add also applies to this method
+        with minimal changes.
+
+        Parameters
+        ----------
+        self
+            first input array. Should have a numeric data type.
+        other
+            second input array. Must be compatible with ``self``
+            (see :ref:`broadcasting`). Should have a numeric data type.
+
+        Returns
+        -------
+        ret
+            an array containing the element-wise sums. The returned array must have a
+            data type determined by :ref:`type-promotion`.
+
+        Examples
+        --------
+        >>> x = ivy.array([1, 2, 3])
+        >>> y = ivy.array([4, 5, 6])
+        >>> z = x + y
+        >>> print(z)
+        ivy.array([5, 7, 9])
+        """
+        return ivy.add(self._data, other)
+
+    def __radd__(self, other):
+        """
+        ivy.Array reverse special method variant of ivy.add. This method simply wraps
+        the function, and so the docstring for ivy.add also applies to this method
+        with minimal changes.
+
+        Parameters
+        ----------
+        self
+            first input array. Should have a numeric data type.
+        other
+            second input array. Must be compatible with ``self``
+            (see :ref:`broadcasting`). Should have a numeric data type.
+
+        Returns
+        -------
+        ret
+            an array containing the element-wise sums. The returned array must have a
+            data type determined by :ref:`type-promotion`.
+
+        Examples
+        --------
+        >>> x = 1
+        >>> y = ivy.array([4, 5, 6])
+        >>> z = x + y
+        >>> print(z)
+        ivy.array([5, 6, 7])
+        """
+        return ivy.add(other, self._data)
+
     @classmethod
     def __torch_function__(cls, func, types, args=(), kwargs={}):
         args, kwargs = args_to_native(*args, **kwargs)
