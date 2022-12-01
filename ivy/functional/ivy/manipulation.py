@@ -11,6 +11,7 @@ from ivy.func_wrapper import (
     to_native_arrays_and_back,
     handle_out_argument,
     handle_nestable,
+    handle_array_like,
 )
 from ivy.exceptions import handle_exceptions
 
@@ -92,6 +93,7 @@ def concat(
 @handle_out_argument
 @handle_nestable
 @handle_exceptions
+@handle_array_like
 def expand_dims(
     x: Union[ivy.Array, ivy.NativeArray],
     /,
@@ -216,6 +218,7 @@ def expand_dims(
 @handle_out_argument
 @handle_nestable
 @handle_exceptions
+@handle_array_like
 def flip(
     x: Union[ivy.Array, ivy.NativeArray],
     /,
@@ -306,6 +309,7 @@ def flip(
 @handle_out_argument
 @handle_nestable
 @handle_exceptions
+@handle_array_like
 def permute_dims(
     x: Union[ivy.Array, ivy.NativeArray],
     /,
@@ -398,14 +402,15 @@ def permute_dims(
 @handle_out_argument
 @handle_nestable
 @handle_exceptions
+@handle_array_like
 def reshape(
     x: Union[ivy.Array, ivy.NativeArray],
     /,
     shape: Union[ivy.Shape, ivy.NativeShape, Sequence[int]],
     *,
     copy: Optional[bool] = None,
-    out: Optional[ivy.Array] = None,
     order: Optional[str] = "C",
+    out: Optional[ivy.Array] = None,
 ) -> ivy.Array:
     """Gives a new shape to an array without changing its data.
 
@@ -424,9 +429,6 @@ def reshape(
         raise a ValueError in case a copy would be necessary.
         If None, the function must reuse existing memory buffer if possible
         and copy otherwise. Default: ``None``.
-    out
-        optional output array, for writing the result to. It must have a shape that the
-        inputs broadcast to.
     order
         Read the elements of x using this index order, and place the elements into
         the reshaped array using this index order.
@@ -438,6 +440,9 @@ def reshape(
         Note that the ‘C’ and ‘F’ options take no account of the memory layout
         of the underlying array, and only refer to the order of indexing.
         Default order is 'C'
+    out
+        optional output array, for writing the result to. It must have a shape that the
+        inputs broadcast to.
 
     Returns
     -------
@@ -519,6 +524,7 @@ def reshape(
 @handle_out_argument
 @handle_nestable
 @handle_exceptions
+@handle_array_like
 def roll(
     x: Union[ivy.Array, ivy.NativeArray, ivy.Container],
     /,
@@ -644,6 +650,7 @@ def roll(
 @handle_out_argument
 @handle_nestable
 @handle_exceptions
+@handle_array_like
 def squeeze(
     x: Union[ivy.Array, ivy.NativeArray],
     /,
@@ -829,6 +836,7 @@ def stack(
 @handle_out_argument
 @handle_nestable
 @handle_exceptions
+@handle_array_like
 def clip(
     x: Union[ivy.Array, ivy.NativeArray],
     x_min: Union[Number, ivy.Array, ivy.NativeArray],
@@ -953,6 +961,7 @@ def clip(
 @handle_out_argument
 @handle_nestable
 @handle_exceptions
+@handle_array_like
 def constant_pad(
     x: Union[ivy.Array, ivy.NativeArray],
     /,
@@ -1038,6 +1047,7 @@ def constant_pad(
 @handle_out_argument
 @handle_nestable
 @handle_exceptions
+@handle_array_like
 def repeat(
     x: Union[ivy.Array, ivy.NativeArray],
     /,
@@ -1107,6 +1117,7 @@ def repeat(
 @to_native_arrays_and_back
 @handle_nestable
 @handle_exceptions
+@handle_array_like
 def split(
     x: Union[ivy.Array, ivy.NativeArray],
     /,
@@ -1185,6 +1196,7 @@ def split(
 @handle_out_argument
 @handle_nestable
 @handle_exceptions
+@handle_array_like
 def swapaxes(
     x: Union[ivy.Array, ivy.NativeArray],
     axis0: int,
@@ -1392,6 +1404,7 @@ def tile(
 @to_native_arrays_and_back
 @handle_nestable
 @handle_exceptions
+@handle_array_like
 def unstack(
     x: Union[ivy.Array, ivy.NativeArray], /, *, axis: int = 0, keepdims: bool = False
 ) -> List[ivy.Array]:
@@ -1474,6 +1487,7 @@ def unstack(
 @handle_out_argument
 @handle_nestable
 @handle_exceptions
+@handle_array_like
 def zero_pad(
     x: Union[ivy.Array, ivy.NativeArray],
     /,
