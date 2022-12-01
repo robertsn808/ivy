@@ -13,3 +13,4 @@ class ufunc:
         for i in range(len(self.array.length)):
             self.operator = op(self.operator, A[i])
             r[i] = self.operator
+        return r
