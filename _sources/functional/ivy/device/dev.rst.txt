@@ -5,8 +5,6 @@ dev
 
 .. autofunction:: ivy.array.array_methods.dev
 
-.. autofunction:: ivy.container.container_methods.dev
-
 .. autofunction:: ivy.container.container_methods.static_dev
 |
 | **Supported Frameworks:**
@@ -36,6 +34,5 @@ dev
 
    dev/dev_functional.rst
    dev/dev_array.rst
-   dev/dev_container.rst
    dev/static_dev_container.rst
 
